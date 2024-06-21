@@ -1,0 +1,44 @@
+body{
+    margin: 0px;
+    background-color: antiquewhite;
+    font-family: "Playwrite AU NSW", cursive;
+}
+thead, caption{
+    color:firebrick;
+    border: 2px solid black;
+    font-family: "Playwrite AU NSW", cursive;
+}
+.anav{
+    color:black;
+    text-decoration:none;
+}
+
+nav{
+    background-color:rgb(61, 61, 159);
+    padding: 20px;
+}
+
+.ulnav{
+    display: flex;
+    list-style-type: none;
+}
+
+.linav{
+    padding-right: 30px;
+}
+
+.tablecontainer{
+    display: flex;
+    justify-content: left;
+}
+
+table{
+    margin: 20px;
+    border: 2px solid black;
+}
+
+footer{
+    text-align: center;
+    position: relative;
+    font-family: "Playwrite AU NSW", cursive;
+}
