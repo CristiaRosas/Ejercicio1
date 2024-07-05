@@ -1,21 +1,16 @@
-<%-- 
-    Document   : lista-productos
-    Created on : 4/07/2024, 15:53:16
-    Author     : informatica
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lista de Productos</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     </head>
     <body>
         <nav class="navbar navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.jsp">Lista de Productos</a>
+                <a class="navbar-brand" href="../index.jsp">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -30,16 +25,74 @@
                                 <a class="nav-link" href="../index.jsp">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../formulario-productos/formulario-productos.jsp">Formulario de Productos</a>
-                            </li>
+                                <a class="nav-link" href="../formulario-productos/formulario-productos.jsp">Formulario Productos</a>
+                            </li>                             
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="./lista-productos.jsp">Lista de Productos</a>
-                            </li>
-                        </ul>
+                                <a class="nav-link active" aria-current="page" href="./lista-producto.jsp">Lista de Productos</a>
+                            </li>                               
+                        </ul>    
                     </div>
                 </div>
             </div>
         </nav>
+        <div class="container mt-5">
+            <table class="table table table-striped mb-3">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Chetos</td>
+                        <td>Flaming Hot</td>
+                        <td>Frito-Lay, Inc</td>
+                        <td>Q5.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Azucar</td>
+                        <td>Azucar de 350oz</td>
+                        <td>Grupo Porres</td>
+                        <td>Q6.00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Cerveza</td>
+                        <td>Bebida alcoholica</td>
+                        <td>Cervecería Centro Americana, S.A.</td>
+                        <td>Q11.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/image/Azucar.jpg" class="d-block w-30" alt="Azucar">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/image/Cerveza.jpg" class="d-block w-30" alt="Cerveza">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/image/Chetos.jpg" class="d-block w-30" alt="Chetos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </body>
 </html>

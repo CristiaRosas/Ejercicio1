@@ -49,28 +49,50 @@
                 <tbody>
                     <tr>
                         <th scope="row">1</th>
-                        <td>Doritos</td>
-                        <td>Risito con saber a Queso</td>
-                        <td>PepsiCo</td>
-                        <td>Q4.00</td>
+                        <td>Chetos</td>
+                        <td>Flaming Hot</td>
+                        <td>Frito-Lay, Inc</td>
+                        <td>Q5.00</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
-                        <td>Sprite</td>
-                        <td>Agua Soda 350ml</td>
-                        <td>Coca Cola</td>
+                        <td>Azucar</td>
+                        <td>Azucar de 350oz</td>
+                        <td>Grupo Porres</td>
                         <td>Q6.00</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
-                        <td>Shampoo</td>
-                        <td>Shampoo para el cabello</td>
-                        <td>Heald Shouldent</td>
-                        <td>Q4.50</td>
+                        <td>Cerveza</td>
+                        <td>Bebida alcoholica</td>
+                        <td>Cervecería Centro Americana, S.A.</td>
+                        <td>Q11.00</td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/image/Azucar.jpg" class="d-block w-30" alt="Azucar">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/image/Cerveza.jpg" class="d-block w-30" alt="Cerveza">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/image/Chetos.jpg" class="d-block w-30" alt="Chetos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </body>
 </html>
