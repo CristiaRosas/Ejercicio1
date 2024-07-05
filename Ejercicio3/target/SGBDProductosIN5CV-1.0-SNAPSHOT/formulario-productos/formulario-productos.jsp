@@ -37,17 +37,31 @@
         </div>
     </nav>
     <div class="container text center">
+        <%
+            String nombreProducto = request.getParameter("nombreProducto");
+            if (nombreProducto == null || nombreProducto.isEmpty()) {
+        %>
+        <h1>Por favor, completa el Nombre</h1>
+        <%
+        } else {
+        %>
         <% ArrayList<String> datosProducto = (ArrayList) request.getAttribute("datosProducto");%>
-        <%if (datosProducto != null) {%>
-        <%for (String producto : datosProducto) {%>
+        <% if (datosProducto != null) { %>
+        <h1>El Producto Llego con exito</h1>
+        <% for (String producto : datosProducto) {%>
         <ul>
-            <li><%=producto%></li>
+            <li class="list-unstyled"><%=producto%></li>
         </ul>
-        <%}%>
-        <%}%>
+        <% }%>
+        <% }%>
+
+        <h1>El Producto Llegó con éxito</h1>
+        <%
+            }
+        %>
 
     </div>
-     <div class="container w-100">
+    <div class="container w-100">
         <form class=" mt-3">
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="nombreproducto" name="nombreProducto" placeholder="">
